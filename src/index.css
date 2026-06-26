@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Cairo", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-dark-bg: #f8f6fc;
+  --color-dark-card: #ffffff;
+  --color-brand-cyan: #7c3aed;
+  --color-brand-blue: #4c1d95;
+  --color-brand-violet: #a78bfa;
+}
+
+@layer base {
+  body {
+    background: linear-gradient(135deg, #ebdfff 0%, #ffffff 50%, #d6c4ff 100%);
+    background-attachment: fixed;
+    color: #1e293b; /* deep charcoal text */
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom premium subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f6fc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.4);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Codai Academy",
+  "description": "Bilingual educational platform for Codai Academy specializing in Data Analysis and AI, featuring an interactive Egyptian-dialect Gemini AI Tutor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
